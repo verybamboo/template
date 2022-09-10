@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <script>
+      fetch("../assets/data.json")
+        .then(response => response.json())
+        .then(response => {
+          console.log(response.data.title)
+          document.querySelector(".bridge").innerText = response.data.title
+          document.querySelector(".day").innerText = response.data.body
+          document.querySelector(".thebg").style.background = `url(./assets/${response.data.background})`; 
+        })  
+    </script>
+    <main>
+      <div class="thebg">
+        <div class="whole">
+          <div class="container">
+            <div class="info">
+              <div class="top">
+                <div class="bridge"></div>
+                <div class="day"></div>
+              </div>
+              <div class="bottom">
+                <div class="iconBox">
+                  <div class="left">
+                    <div class="test1"></div>
+                    <div class ="logo">
+                    </div>
+                  <div class="test2"></div>
+                  </div>
+                  <div class="right"> 
+                    <div class ="socials">
+                    </div>
+                    <div class ="legal">
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
