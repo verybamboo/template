@@ -1,0 +1,111 @@
+@font-face {
+  font-family: Amaranth;
+  src: url("./assets/amaranth-latin-700.woff2");
+}
+
+@font-face {
+  font-family: HelveticaNLT;
+  src: url("./assets/HelveticaNeueLTStd-LtCn.otf");
+}
+
+html, body{
+  margin: 0px;
+  padding: 0px;
+}
+
+.thebg{
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background-repeat: no-repeat;
+}
+
+.whole{
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+
+.container{
+  background-color: rgba(255, 255, 255, 0.85);
+}
+
+.bottom{  
+  border:solid #efbf12;
+  border-color:#efbf12 #efbf12 transparent #efbf12;
+  border-width: 10px 0px 0px 0px;
+  border-radius: 100%/125px 125px 0 0;
+  background-color: rgba(0, 128, 196, 255);
+  padding-bottom: 1.5em;
+  height: 6.5em;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.iconBox{
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.left{
+  width: 33%;
+  display: flex;
+}
+
+.middle{
+  width: 33%;
+  display: flex;
+  justify-content: center;
+}
+
+.right{
+  width: 33%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.bridge{
+  font-family: 'Amaranth';
+  font-size: 3.75em;
+  width: auto;
+  color: #0080c4;
+  margin-left: 7%;
+  padding-top: 2%;
+}
+
+.day{
+  font-family: 'HelveticaNLT';
+  font-size: 3em;
+  color: #0080c4;
+  margin-left: 7%;
+}
+
+.logo{
+  content: url('./assets/logo.svg');
+  display: flex;
+  justify-content: center;
+  width: 60%;
+  height: 100%;
+}
+
+.socials{
+  content: url('./assets/social.png');
+  width: 30%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding-right: 5px;
+}
+
+.legal{
+  content: url('./assets/legal.svg');
+  width: 50%;
+  margin-right: 2em;
+  margin-left: 5px;
+}
+
+
+
