@@ -3,10 +3,10 @@ function fetchData() {
     .then((response) => response.json())
     .then((response) => {
       console.log(response.data.title);
-      document.querySelector(".bridge").innerText = response.data.title;
-      document.querySelector(".day").innerText = response.data.body;
+      document.querySelector(".bridgeSavings").innerText = response.data.title;
+      document.querySelector(".closed").innerText = response.data.body;
       document.querySelector(
-        ".thebg"
+        ".background"
       ).style.background = `url(./assets/${response.data.background})`;
     });
 }
