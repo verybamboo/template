@@ -1,3 +1,6 @@
+/*
+this fetches information from the data.json file and passes it to the html
+*/
 function fetchData() {
   fetch("../assets/data.json")
     .then((response) => response.json())

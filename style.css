@@ -8,6 +8,8 @@
   src: url("./assets/HelveticaNeueLTStd-LtCn.otf");
 }
 
+/*reset the html for default spacing
+*/
 html, body{
   margin: 0px;
   padding: 0px;
@@ -30,6 +32,10 @@ html, body{
   background-color: rgba(255, 255, 255, 0.8);
 }
 
+
+/* I tried my best to create this curved line but according to the design picture
+the edges are slightly off but I think this is the closest I can get with what I know
+*/
 .bottomDiv{  
   border:solid #efbf12;
   border-color:#efbf12 #efbf12 transparent #efbf12;
@@ -49,6 +55,11 @@ html, body{
   align-items: flex-end;
   justify-content: center;
 }
+
+/*
+this is an empty div that just takes up 1/3 of the space of the parent div
+allowing for equal spacing of the other 2 divs
+*/
 
 .leftDiv{
   width: 33%;
@@ -106,7 +117,7 @@ html, body{
   content: url('./assets/legal.svg');
   width: 50%;
   margin-right: 2em;
-  margin-left: 5px;
+  margin-left: 10px;
 }
 
 
